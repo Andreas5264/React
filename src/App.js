@@ -5,33 +5,24 @@ import { Alert, Button } from "@navikt/ds-react";
 import React, { useState } from 'react';
 
 
-function gange(a, b){
-  return a * b
-}
-
-
 function App() {
-  const [count, setCount] = useState(0);
-  const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-
-  let text = "";
-  for (let i = 0; i < 14; i++) {
-    text += <br></br>;
-  }
-
   return (
     <div className="App">
+      <h1>Søknaden er mottatt</h1>
       
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
 
 
-      {count % 2 == 1 &&
-        <div>stop!!!</div>
-      }
-      
+      <Alert
+  fullWidth={false}
+  inline={false}
+  size="medium"
+  variant="info"
+>
+  Vi anbefaler at bedriften <a href = "https://l5xsun.axshare.com/#id=n9fbtx&p=gravide_-_krav">sender selve refusjonskravet</a> før denne <br></br> søknaden er ferdig behandlet. Da unngår dere å oversitte fristen, som <br></br> er tre måneder.
+</Alert>
+
+
+
     </div>
   );
 }
